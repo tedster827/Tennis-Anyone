@@ -54,3 +54,9 @@ int solution(int P, int C) {
     }
     return 0;
 }
+
+int main()
+{
+  solution(5,3);
+  return 0;
+}
