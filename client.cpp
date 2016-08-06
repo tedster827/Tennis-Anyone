@@ -57,6 +57,6 @@ int solution(int P, int C) {
 
 int main()
 {
-  solution(5,3);
+  cout << solution(5,3);
   return 0;
 }
