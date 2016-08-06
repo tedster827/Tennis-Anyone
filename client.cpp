@@ -43,7 +43,7 @@ int solution(int P, int C) {
     the case then simply return the needed amount.
     The number of courts needed is found by divding the
     number of players by two (two players per game).*/
-    if(C > ((P/2)-.5))
+    if(C > ((P/2)-(0.5)))
     {
        return((P/2)-.5);
        cout << ((P/2)-.5);
@@ -57,6 +57,6 @@ int solution(int P, int C) {
 
 int main()
 {
-  cout << solution(5,3);
+  cout << solution(5,3) << endl;
   return 0;
 }
