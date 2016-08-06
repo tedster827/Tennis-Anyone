@@ -18,14 +18,22 @@ int solution(int P, int C) {
     of courts is greater than whats needed, if that's
     the case then simply return the needed amount.
     The number of courts needed is found by divding the
-    number of players by two (two players per game).*/
-    if(C > (P/2))
+    number of players by two (two players per game).
+    Also checking for negitive people (Zombies don't
+    play tennis.)*/
+    if(C > (P/2) && P > 0)
     {
        return(P/2);
     }
+    /*This case runs when the number of courts
+    need is greater than the number of courts
+    available. The number of games that can be played
+    are only the number of courts available. So only
+    return C (Number of Available Courts)*/
     else
     {
         return C;
     }
+    //Return 0 means the number of players is less than 0.
     return 0;
 }
