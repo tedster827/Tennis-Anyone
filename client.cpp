@@ -1,27 +1,3 @@
-/* you can use includes, for example:
-// #include <algorithm>
-#include <iostream>
-#include <math.h>
-
-using namespace std;
-// you can write to stdout for debugging purposes, e.g.
-// cout << "this is a debug message" << endl;
-
-int solution(int P, int C) {
-    // write your code in C++11 (g++ 4.8.2)
-    if(C > floor(P/2))
-    {
-       return(floor(P/2));
-    }
-    else
-    {
-        return C;
-    }
-    return 0;
-}
-
-*/
-
 /*
 Teddy Williams
 */
@@ -43,20 +19,13 @@ int solution(int P, int C) {
     the case then simply return the needed amount.
     The number of courts needed is found by divding the
     number of players by two (two players per game).*/
-    if(C > ((P/2)-(0.5)))
+    if(C > (P/2))
     {
-       return((P/2)-.5);
-       cout << ((P/2)-.5);
+       return(P/2);
     }
     else
     {
         return C;
     }
     return 0;
-}
-
-int main()
-{
-  cout << solution(5,3) << endl;
-  return 0;
 }
